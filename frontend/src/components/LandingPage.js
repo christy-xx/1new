@@ -142,23 +142,23 @@ const LandingPage = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
       {/* Navigation */}
-      <nav className="fixed top-4 left-4 right-4 bg-white/90 backdrop-blur-lg rounded-2xl shadow-xl border border-white/20 z-50">
-        <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
-          <div className="flex items-center justify-between h-16">
+      <nav className="fixed top-2 left-2 right-2 sm:top-4 sm:left-4 sm:right-4 bg-white/90 backdrop-blur-lg rounded-xl sm:rounded-2xl shadow-xl border border-white/20 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-14 sm:h-16">
             <div className="flex items-center">
-              <Leaf className="h-8 w-8 text-green-600" />
-              <span className="ml-2 text-2xl font-bold text-green-800">HariyaliWala</span>
+              <Leaf className="h-7 w-7 sm:h-8 sm:w-8 text-green-600" />
+              <span className="ml-2 text-lg sm:text-2xl font-bold text-green-800">HariyaliWala</span>
             </div>
             
-            <div className="hidden md:flex items-center space-x-8">
-              <a href="#features" className="text-gray-700 hover:text-green-600 transition-colors font-medium">Features</a>
-              <a href="#how-it-works" className="text-gray-700 hover:text-green-600 transition-colors font-medium">How It Works</a>
-              <a href="#for-customers" className="text-gray-700 hover:text-green-600 transition-colors font-medium">For Customers</a>
-              <a href="#for-nurseries" className="text-gray-700 hover:text-green-600 transition-colors font-medium">For Nurseries</a>
+            <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
+              <a href="#features" className="text-gray-700 hover:text-green-600 transition-colors font-medium text-sm lg:text-base">Features</a>
+              <a href="#how-it-works" className="text-gray-700 hover:text-green-600 transition-colors font-medium text-sm lg:text-base">How It Works</a>
+              <a href="#for-customers" className="text-gray-700 hover:text-green-600 transition-colors font-medium text-sm lg:text-base">For Customers</a>
+              <a href="#for-nurseries" className="text-gray-700 hover:text-green-600 transition-colors font-medium text-sm lg:text-base">For Nurseries</a>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-green-600 text-white px-6 py-2 rounded-full hover:bg-green-700 transition-colors shadow-lg"
+                className="bg-green-600 text-white px-4 py-2 lg:px-6 lg:py-2 rounded-full hover:bg-green-700 transition-colors shadow-lg text-sm lg:text-base font-medium"
               >
                 Get Started
               </motion.button>
@@ -169,7 +169,7 @@ const LandingPage = () => {
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 className="text-gray-700 hover:text-green-600 p-2 rounded-lg hover:bg-gray-100 transition-colors"
               >
-                {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+                {isMenuOpen ? <X className="h-5 w-5 sm:h-6 sm:w-6" /> : <Menu className="h-5 w-5 sm:h-6 sm:w-6" />}
               </button>
             </div>
           </div>
@@ -181,16 +181,18 @@ const LandingPage = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-white/95 backdrop-blur-md rounded-b-2xl border-t border-gray-100"
+            className="md:hidden bg-white/95 backdrop-blur-md rounded-b-xl sm:rounded-b-2xl border-t border-gray-100"
           >
-            <div className="px-6 py-4 space-y-3">
-              <a href="#features" className="block py-2 text-gray-700 hover:text-green-600 font-medium transition-colors">Features</a>
-              <a href="#how-it-works" className="block py-2 text-gray-700 hover:text-green-600 font-medium transition-colors">How It Works</a>
-              <a href="#for-customers" className="block py-2 text-gray-700 hover:text-green-600 font-medium transition-colors">For Customers</a>
-              <a href="#for-nurseries" className="block py-2 text-gray-700 hover:text-green-600 font-medium transition-colors">For Nurseries</a>
-              <button className="w-full bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-colors shadow-lg font-medium">
-                Get Started
-              </button>
+            <div className="px-4 py-3 space-y-2 text-center">
+              <a href="#features" className="block py-2 px-4 text-gray-700 hover:text-green-600 font-medium transition-colors hover:bg-gray-50 rounded-lg">Features</a>
+              <a href="#how-it-works" className="block py-2 px-4 text-gray-700 hover:text-green-600 font-medium transition-colors hover:bg-gray-50 rounded-lg">How It Works</a>
+              <a href="#for-customers" className="block py-2 px-4 text-gray-700 hover:text-green-600 font-medium transition-colors hover:bg-gray-50 rounded-lg">For Customers</a>
+              <a href="#for-nurseries" className="block py-2 px-4 text-gray-700 hover:text-green-600 font-medium transition-colors hover:bg-gray-50 rounded-lg">For Nurseries</a>
+              <div className="pt-2">
+                <button className="w-full max-w-xs mx-auto bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition-colors shadow-lg font-medium">
+                  Get Started
+                </button>
+              </div>
             </div>
           </motion.div>
         )}
