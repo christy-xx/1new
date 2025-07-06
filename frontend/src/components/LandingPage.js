@@ -140,7 +140,7 @@ const LandingPage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
+    <div className="min-h-screen w-full bg-gradient-to-br from-green-50 to-blue-50 overflow-x-hidden">
       {/* Navigation */}
       <nav className="fixed top-2 left-2 right-2 sm:top-4 sm:left-4 sm:right-4 bg-white/90 backdrop-blur-lg rounded-xl sm:rounded-2xl shadow-xl border border-white/20 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -199,7 +199,7 @@ const LandingPage = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="relative pt-16 pb-20 overflow-hidden">
+      <section className="relative pt-16 pb-20 overflow-hidden min-h-screen flex items-center">
         <div className="absolute inset-0 bg-gradient-to-br from-green-900/20 to-blue-900/20"></div>
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
@@ -208,13 +208,13 @@ const LandingPage = () => {
           }}
         ></div>
         
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
+        <div className="relative w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <motion.h1
               initial={{ opacity: 0, y: 60 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut" }}
-              className="text-5xl md:text-7xl font-bold text-gray-900 mb-6"
+              className="text-4xl sm:text-5xl md:text-7xl font-bold text-gray-900 mb-6"
             >
               Making Gardening
               <span className="text-green-600 block">Accessible for Every Indian</span>
@@ -224,7 +224,7 @@ const LandingPage = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-              className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto"
+              className="text-lg sm:text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto px-4"
             >
               India's premier digital gardening marketplace connecting plant enthusiasts with trusted local nurseries. Quality plants, expert guidance, doorstep delivery.
             </motion.p>
@@ -233,19 +233,19 @@ const LandingPage = () => {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-              className="flex flex-col sm:flex-row gap-4 justify-center"
+              className="flex flex-col sm:flex-row gap-4 justify-center px-4"
             >
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition-colors shadow-lg"
+                className="bg-green-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-green-700 transition-colors shadow-lg w-full sm:w-auto"
               >
                 Start Gardening Today
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg"
+                className="bg-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg w-full sm:w-auto"
               >
                 Join as Nursery Partner
               </motion.button>
