@@ -580,7 +580,7 @@ const LandingPage = () => {
       {/* Footer */}
       <footer className="bg-gray-900 text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="col-span-1 md:col-span-2">
               <div className="flex items-center mb-6">
                 <Leaf className="h-8 w-8 text-green-500" />
@@ -608,16 +608,6 @@ const LandingPage = () => {
                 <li><a href="#how-it-works" className="hover:text-green-500 transition-colors">How It Works</a></li>
                 <li><a href="#for-customers" className="hover:text-green-500 transition-colors">For Customers</a></li>
                 <li><a href="#for-nurseries" className="hover:text-green-500 transition-colors">For Nurseries</a></li>
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Support</h3>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-green-500 transition-colors">Help Center</a></li>
-                <li><a href="#" className="hover:text-green-500 transition-colors">Plant Care Guide</a></li>
-                <li><a href="#" className="hover:text-green-500 transition-colors">Shipping Info</a></li>
-                <li><a href="#" className="hover:text-green-500 transition-colors">Returns</a></li>
               </ul>
             </div>
           </div>
