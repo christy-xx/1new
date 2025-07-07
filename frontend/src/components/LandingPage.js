@@ -572,7 +572,8 @@ const LandingPage = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-green-600 transition-colors"
+                onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfVXUVqWo4fOipZU7lPt4lp9plupPPHVZCeYwNC2FBuM5-9bQ/viewform?usp=header', '_blank')}
+                className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-green-600 transition-colors cursor-pointer"
               >
                 Become a Partner
               </motion.button>
