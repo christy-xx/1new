@@ -482,7 +482,8 @@ const LandingPage = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg inline-flex items-center gap-2"
+              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfVXUVqWo4fOipZU7lPt4lp9plupPPHVZCeYwNC2FBuM5-9bQ/viewform?usp=header', '_blank')}
+              className="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg inline-flex items-center gap-2 cursor-pointer"
             >
               Become a Partner
               <ArrowRight className="h-5 w-5" />
