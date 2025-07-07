@@ -245,7 +245,8 @@ const LandingPage = () => {
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg w-full sm:w-auto"
+                onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSfVXUVqWo4fOipZU7lPt4lp9plupPPHVZCeYwNC2FBuM5-9bQ/viewform?usp=header', '_blank')}
+                className="bg-blue-600 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full text-base sm:text-lg font-semibold hover:bg-blue-700 transition-colors shadow-lg w-full sm:w-auto cursor-pointer"
               >
                 Join as Nursery Partner
               </motion.button>
